@@ -1,0 +1,11 @@
+<table>
+  <thead></thead>
+  <tbody>
+    <tr *ngFor="let pokemon of pokemons; trackBy: track">
+      <app-pokemon-detail
+        [detail]="pokemon"
+        (remove)="handleRemove($event)"
+      ></app-pokemon-detail>
+    </tr>
+  </tbody>
+</table>

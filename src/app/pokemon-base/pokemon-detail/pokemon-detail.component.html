@@ -1,0 +1,11 @@
+<table>
+  <tr>
+    <td class="pokemon-td" [class.cool-bool]="detail.isCool">
+      {{ detail.id }} : {{ detail.name }}
+      {{ detail.isCool ? "isCool" : "isNotCool" }}
+    </td>
+    <td>
+      <button (click)="onRemove()">Remove Pokemon</button>
+    </td>
+  </tr>
+</table>
